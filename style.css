@@ -1,0 +1,487 @@
+/* Reset some default styles */
+body,
+h2,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #e0f7fa; /* Light blue background */
+  color: #01579b; /* Dark blue text color */
+}
+
+/* Header styles */
+header {
+  background-color: #0277bd; /* Medium blue */
+  padding: 15px 0;
+}
+
+header ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+header li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 12px;
+}
+
+header a:hover {
+  box-shadow: inset;
+  background-color: #01579b; /* Dark blue on hover */
+}
+
+/* Home content styles */
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #0288d1; /* Bright blue */
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero .cta-button {
+  background-color: #039be5; /* Light blue button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.hero .cta-button:hover {
+  background-color: #0277bd; /* Medium blue on hover */
+}
+
+.hero-image img {
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* Featured Campaigns Section */
+.featured-campaigns {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Make each campaign card a block layout with image and description stacked */
+.campaign-card {
+  display: flex;
+  flex-direction: column; /* Stack image and description vertically */
+  align-items: center;
+  margin-bottom: 40px; /* Add space between each card */
+}
+
+.campaign-image img {
+  max-width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  max-height: 500px; /* You can adjust this to make the images bigger or smaller */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+
+.campaign-description {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.campaign-description h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.campaign-description p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.donate-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.donate-button:hover {
+  background-color: #0056b3;
+}
+
+/* Campaigns content styles */
+/* Main container for all campaigns */
+#campaigns {
+  padding: 40px 20px;
+  background-color: #e0f7fa; /* Light blue background */
+  color: #004d40; /* Dark teal text */
+}
+
+/* Intro Section */
+.intro p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #004d40;
+}
+
+/* Campaigns Section */
+.campaigns-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Campaign Card Styles */
+.campaign-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.campaign-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-card h3 {
+  font-size: 1.8em;
+  color: #004d40;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Campaign Image */
+#campaigns .campaign-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 200px;
+  margin-bottom: 15px;
+}
+
+/* List Styling for Campaign Overview */
+.campaign-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.campaign-card ul li {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.campaign-card ul li strong {
+  color: #007bff; /* Blue color for labels */
+}
+
+/* Donate Button */
+.donate-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Call to Action Section */
+.cta {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #007bff;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.cta:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .campaign-card {
+    padding: 15px;
+  }
+
+  .donate-button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Blog Content Style */
+#blog main {
+  padding: 2em;
+}
+
+.blog-post {
+  background-color: white;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h2 {
+  color: #004d40;
+}
+
+.read-more {
+  color: #00796b;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Contact Page Styles */
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-page h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0288d1; /* Match the blue color */
+}
+
+/* Centered Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #01579b;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0288d1;
+}
+
+.contact-form button {
+  background-color: #0288d1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #01579b;
+}
+
+/* Social Media Section */
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #0288d1;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 5px;
+  color: white;
+  background-color: #0277bd;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #01579b;
+}
+
+/* Newsletter Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-content h3 {
+  color: #0288d1;
+}
+
+.modal-content .newsletter-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.modal-content .newsletter-form button {
+  background-color: #0288d1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content .newsletter-form button:hover {
+  background-color: #01579b;
+}
+
+/* Close Button */
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #333;
+}
+
+.resources-section {
+  padding: 40px 20px;
+  background-color: #e0f7fa;
+  color: #004d40;
+  text-align: center;
+}
+
+.resources-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.resource-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+}
+
+.resource-card h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.resource-card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.resource-card a {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.resource-card a:hover {
+  background-color: #0056b3;
+}
